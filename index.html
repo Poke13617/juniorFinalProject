@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" src="style.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+    <div class="off-screen-menu">
+        <ul>
+            <li><a href=#ourServA>Our Services</a></li>
+            <li><a href=#ourTechStack>Our Tech Stack</a></li>
+            <li><a href=#>Education</a></li>
+            <li><a href=></a></li>
+            <li><a href=></a></li>
+        </ul>
+    </div>
     <nav>
-        <li>Home</li>
-        <li>Services</li>
-        <li>About</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
-    <h2>Web Design Excellence Since 2024</h1>
+    <h2>Web Design Excellence Since 2024</h2>
     <p>We create stunning, responsive websites that combine cutting-edge technology with exceptional user experience.</p>
     <button id="serviceBtn">Explore Our Services</button>
 
         <!-- services, this will be likely lengthen out in the near future. "Our Services" is underlined-->
-    <h3>Our Services</h3>
+    <h3 id="ourServA">Our Services</h3>
     
     <div class="boxes"><!--These will be under a button. All the divs will be dropdown from the "Our Services" text.-->
         <h4>Responsive Web Design</h4>
@@ -37,33 +48,40 @@
         <p>We organize complex websites into multiple files for better maintainability, faster loading times, and improved SEO performance. Clean, organized code following the DRY principle.</p>
     </div>
 
-    <h2>Our Technology Stack</h2>
+    <h2 id="ourTechStack">Our Technology Stack</h2>
     <p>We use cutting-edge technologies to deliver exceptional results:</p>
 
-        <div class="buttonHalfSize">HTML5</div>
-            <div class="buttonHalfSize">CSS3</div>
-        <div class="buttonHalfSize">JavaScript</div>
-            <div class="buttonHalfSize">Responsive Design</div>
-        <div class="buttonHalfSize">CSS Grid</div>
-            <div class="buttonHalfSize">Flexbox</div>
-        <div class="buttonHalfSize">Animations</div>
-            <div class="buttonHalfSize">Semantic HTML</div>
-
-    <h2>Interactive Demonstrations</h2>
-    <div>
-    <p class="bold">CSS Animations and Transitions</p>
+    <div class="row row-cols-sm-2 row-cols-md-4">
+        <div class="col-md-3 col-sm-6">HTML5</div>
+            <div class="col-md-3 col-sm-6">CSS3</div>
+        <div class="col-md-3 col-sm-6">JavaScript</div>
+            <div class="col-md-3 col-sm-6">Responsive Design</div>
     </div>
-    <p class="bold2">Visibility Property Demo</p>
+    <div class="row row-cols-sm-2 row-cols-md-4">
+        <div class="col-md-3 col-sm-6">CSS Grid</div>
+            <div class="col-md-3 col-sm-6">Flexbox</div>
+        <div class="col-md-3 col-sm-6">Animations</div>
+            <div class="col-md-3 col-sm-6">Semantic HTML</div>
+    </div>
+
+
+    <h2 id="interactDemo">Interactive Demonstrations</h2>
+    <div>
+    <h5>CSS Animations and Transitions</h5>
+    </div>
+
+
+    <h4>Visibility Property Demo</h4>
     <p>Click the button to toggle element visibility (notice it still takes up space):</p>
         <button id="visTrigger">Toggle Visibility</button>
-        <div class="visTarget">This element demonstrates the visibility property!</div>
-    <p class="bold2">Box Model Demonstration</p>
+        <div id="visTarget">This element demonstrates the visibility property!</div>
+    <h4>Box Model Demonstration</h4>
         <p>Hover to see padding, margin, and border changes:</p>
         <div class="boxModel"><p>Box Model Demo</p><p>Margin: 20px | Border: 5px | Padding: 20px</p></div>
 
     <h5>Embedded Content with IFrames</h5>
     <p>Here's an example of embedding external content:</p>
-    <iframe src="src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2834.391878743146!2d-74.99252468669131!3d44.732021281869095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc5d49b5e03a9f%3A0xaf7b7b60e3215973!2sSeaway%20Area%20Tech%20Center!5e0!3m2!1sen!2sus!4v1748865196814!5m2!1sen!2sus" width="600" height="450" style="border: 0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2834.368657353595!2d-74.9891992!3d44.7324951!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc5d49b5e03a9f%3A0x34ed4ffecd8d6afb!2sBOCES%20Seaway%20Tech%20Campus!5e0!3m2!1sen!2sus!4v1748969878041!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <p>IFrames are useful for embedding maps, videos, videos, or other external content while maintaining security isolation.</p>
 
     <div>
@@ -71,11 +89,11 @@
         <p>This project demonstrates various selector combinations:</p>
 
         <ul>
-            <li><p><span class="bold">Multi-selectors:</span> h1, h2, h3 { font-family: Georgia }</p></li>
-            <li><p><span class="bold">Child selectors:</span> .card > h3 for direct children</p></li>
-            <li><p><span class="bold">Pseudo-selectors:</span> :nth-child(even) for alternating styles</p></li>
-            <li><p><span class="bold">Hover effects:</span> Interactive elements throughout the site</p></li>
-            <li><p><span class="bold">Focus States:</span> Accessible navigation and form elements</p></li>
+            <li><p><b>Multi-selectors:</b> h1, h2, h3 { font-family: Georgia }</p></li>
+            <li><p><b>Child selectors:</b> .card > h3 for direct children</p></li>
+            <li><p><b>Pseudo-selectors:</b> :nth-child(even) for alternating styles</p></li>
+            <li><p><b>Hover effects:</b> Interactive elements throughout the site</p></li>
+            <li><p><b>Focus States:</b> Accessible navigation and form elements</p></li>
         </ul>
     
     
@@ -84,12 +102,13 @@
     <h2>Get In Touch</h2>
 
     <p>Ready to start your next web project? Let's discuss how we can help bring your vision to life.</p>
-    <p><span class="bold">Email:</span> info@computerinfoscience.com</p>
-    <p><span class="bold">Phone:</span> (555) 123-4567</p>
-    <p><span class="bold">Address:</span> 7225 NY-56, Norwood, NY 13668</p>
-
+    <p><b>Email:</b> info@computerinfoscience.com</p>
+    <p><b>Phone:</b> (555) 123-4567</p>
+    <p><b>Address:</b> 7225 NY-56, Norwood, NY 13668</p>
+</div>
     <footer>
         <p>2024 Computer & Information Science. All rights reserved.</p>
         <p>Built with HTML5 semantic tags, advanced CSS selectors, animations, and responsive design principles.</p>
+    </footer>
 </body>
 </html>
