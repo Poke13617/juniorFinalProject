@@ -8,8 +8,8 @@
     
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" src="style.css">
-    
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');</style>
     <title>Computer and Information Sciences</title>
 </head>
 <body>
@@ -18,95 +18,102 @@
     <nav>
     <div class="off-screen-menu">
         <ul>
-            <li><a href=#home>Our Services</a></li>
-            <li><a href=#ourServA>Our Tech Stack</a></li>
-            <li><a href=#ourTechStack>Education</a></li>
-            <li><a href=#getInTouch> Contact</a></li>
-            <li><a href=""></a></li>
+            <li><a href=#home>Home</a></li>
+            <li><a href=#ourServA>Our Services</a></li>
+            <li><a href=#ourTechStack>Our Tech Stack</a></li>
+            <li><a href=#interactDemo>Portfolio</a></li>
+            <li><a href=#getInTouch>Contact</a></li>
         </ul>
     </div>
     </nav>
     
-    <h2 id="home">Web Design Excellence Since 2024</h2>
+    <div id="hero" class="text-center">
+    <h2 id="home" class="pt-serif-regular text-center">Web Design Excellence Since 2024</h2>
     <p>We create stunning, responsive websites that combine cutting-edge technology with exceptional user experience.</p>
-    
+    </div>
 
+    <section class="spaced">
         <!-- services, this will be likely lengthen out in the near future. "Our Services" is underlined-->
-    <div id = "ecs"><h2 id="ourServA">Our Services (Click Me!)</h2></div>
+    <div id = "ecs"><h2 id="ourServA" class="pt-serif-regular">Our Services (Click Me!)</h2></div>
     
     <div id="ec-desc">
     <div class="boxes text-center"><!--These will be under a button. All the divs will be dropdown from the "Our Services" text.-->
-        <h4>Responsive Web Design</h4>
+        <h4 class="pt-serif-regular">Responsive Web Design</h4>
         <p class="thinner">Using advanced CSS selectors, animations, and transitions, we build engaging websites with hover effects, smooth scrolling, and dynamic content that responds to user interactions.</p>
     </div>
     
     <div class="boxes text-center">
-        <h4>Interactive Development</h4>
+        <h4 class="pt-serif-regular">Interactive Development</h4>
         <p class="thinner">Using advanced CSS selectors, animations, and transitions, we build engaging websites with hover effects, smooth scrolling, and dynamic content that responds to user interaction.</p>
     </div>
     <div class="boxes text-center">
-        <h4>Multi-Page Architecture</h4>
+        <h4 class="pt-serif-regular">Multi-Page Architecture</h4>
         <p class="thinner">We organize complex websites into multiple files for better maintainability, faster loading times, and improved SEO performance. Clean, organized code following the DRY principle.</p>
     </div>
 
     </div>
-
-    <section id="ourTechStack">
-    <h2>Our Technology Stack</h2>
+    </section>
+    <section id="ourTechStack" class="spaced">
+    <h2 class="pt-serif-regular">Our Technology Stack</h2>
     <p class="text-center">We use cutting-edge technologies to deliver exceptional results:</p>
 
     <div class="techStacks">
-    <div class="row row-cols-sm-2 row-cols-md-4">
-        <div class="item col-md-3 col-sm-6">HTML5</div>
-            <div class="item col-md-3 col-sm-6">CSS3</div>
-        <div class="item col-md-3 col-sm-6">JavaScript</div>
-            <div class=" item col-md-3 col-sm-6">Responsive Design</div>
-    </div>
-    <div class="row row-cols-sm-2 row-cols-md-4">
-        <div class="item col-md-3 col-sm-6">CSS Grid</div>
-            <div class="item col-md-3 col-sm-6">Flexbox</div>
-        <div class="item col-md-3 col-sm-6">Animations</div>
-            <div class="item col-md-3 col-sm-6">Semantic HTML</div>
-    </div>
+
+    <div class="row row-cols-lg-4 row-cols-md-4 row-cols-sm-2">
+        <div class="item">HTML5</div>
+            <div class="item">CSS3</div>
+                <div class="item">JavaScript</div>
+                    <div class="item">Responsive Design</div>
     </div>
 
-    <h2 id="interactDemo">Interactive Demonstrations</h2>
+    <div class="row row-cols-lg-4 row-cols-md-4 row-cols-sm-2">
+        <div class="item">CSS Grid</div>
+            <div class="item">Flexbox</div>
+                <div class="item">Animations</div>
+                    <div class="item">Semantic HTML</div>
+    </div>
+    </div>
+    </section>
+
+    <section class="spaced">
+    <h2 id="interactDemo" class="spacesmtb">Interactive Demonstrations</h2>
     <div>
     <h5>CSS Animations and Transitions</h5>
     </div>
 
 
-    <h4>Visibility Property Demo</h4>
+    <h4 class="pt-serif-regular">Visibility Property Demo</h4>
     <p>Click the button to toggle element visibility (notice it still takes up space):</p>
         <button id="visTrigger">Toggle Visibility</button>
         <div id="visTarget">This element demonstrates the visibility property!</div>
-    <h4>Box Model Demonstration</h4>
+    <h4 class="pt-serif-regular">Box Model Demonstration</h4>
         <p>Hover to see padding, margin, and border changes:</p>
         <div class="boxModel"><p>Box Model Demo</p><p>Margin: 20px | Border: 5px | Padding: 20px</p></div>
 
-    <h5>Embedded Content with IFrames</h5>
+    <h5 class="pt-serif-regular">Embedded Content with IFrames</h5>
     <p>Here's an example of embedding external content:</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2834.368657353595!2d-74.9891992!3d44.7324951!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc5d49b5e03a9f%3A0x34ed4ffecd8d6afb!2sBOCES%20Seaway%20Tech%20Campus!5e0!3m2!1sen!2sus!4v1748969878041!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="iframe"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2834.368657353595!2d-74.9891992!3d44.7324951!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc5d49b5e03a9f%3A0x34ed4ffecd8d6afb!2sBOCES%20Seaway%20Tech%20Campus!5e0!3m2!1sen!2sus!4v1748969878041!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <p>IFrames are useful for embedding maps, videos, videos, or other external content while maintaining security isolation.</p>
 
-    <div>
-        <h3>Advanced CSS Selectors</h3>
+    <div class="card text-center">
+        
+        <h3 class="pt-serif-regular">Advanced CSS Selectors</h3>
         <p>This project demonstrates various selector combinations:</p>
-
-        <ul>
-            <li><p><b>Multi-selectors:</b> h1, h2, h3 { font-family: Georgia }</p></li>
-            <li><p><b>Child selectors:</b> .card > h3 for direct children</p></li>
-            <li><p><b>Pseudo-selectors:</b> :nth-child(even) for alternating styles</p></li>
-            <li><p><b>Hover effects:</b> Interactive elements throughout the site</p></li>
-            <li><p><b>Focus States:</b> Accessible navigation and form elements</p></li>
-        </ul>
+        
+        
+            <p><b>Multi-selectors:</b> h1, h2, h3 { font-family: Georgia }</p>
+            <p><b>Child selectors:</b> .card > h3 for direct children</p>
+            <p><b>Pseudo-selectors:</b> :nth-child(even) for alternating styles</p>
+            <p><b>Hover effects:</b> Interactive elements throughout the site</p>
+            <p><b>Focus States:</b> Accessible navigation and form elements</p>
+        
     
     
     </div>
     </section>
 
     <section id="getInTouch">
-    <h2 id="getInTouch">Get In Touch</h2>
+    <h2 id="getInTouch" class="pt-serif-regular">Get In Touch</h2>
     <p>Ready to start your next web project? Let's discuss how we can help bring your vision to life.</p>
     <p><b>Email:</b> info@computerinfoscience.com</p>
     <p><b>Phone:</b> (555) 123-4567</p>
@@ -128,16 +135,14 @@
             $("#ec-desc").slideToggle('slow')
         });
 
+
+
         $("#visTrigger").click(function(){
             
-            $("#visTarget").toggle('slow')
-            
         })
-        $(".item").on("mouseenter mouseleave", function(){
-            $(this).animate({
-                width:  "width+20px",
-                height: "height+10px"
-        }, 1000);
+        
+        $(".boxModel").on("mouseon", function(){
+            $(".boxModel").animate({"scale":"1"}, "slow")
         })
     </script>
 </body>
