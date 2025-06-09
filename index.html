@@ -13,26 +13,28 @@
     <title>Computer and Information Sciences</title>
 </head>
 <body>
-    <div class="container">
-
     <nav>
-    <div class="off-screen-menu">
-        <ul>
-            <li><a href=#home>Home</a></li>
-            <li><a href=#ourServA>Our Services</a></li>
-            <li><a href=#ourTechStack>Our Tech Stack</a></li>
-            <li><a href=#interactDemo>Portfolio</a></li>
-            <li><a href=#getInTouch>Contact</a></li>
+    <div class="navDiv">
+        <ul class="nav-across bgGradient">
+            <li class="navLi"><img class="nav-img" src="logo.png"></li>
+            <li class="navLi nav-content"><a class="white"href=#home>Home</a></li>
+            <li class="navLi nav-content"><a class="white"href=#ourServA>Our Services</a></li>
+            <li class="navLi nav-content"><a class="white"href=#ourTechStack>Our Tech Stack</a></li>
+            <li class="navLi nav-content"><a class="white"href=#interactDemo>Portfolio</a></li>
+            <li class="navLi nav-content"><a class="white"href=#getInTouch>Contact</a></li>
         </ul>
     </div>
     </nav>
+    <div class="container">
+
+    
     
     <div id="hero" class="text-center">
     <h2 id="home" class="pt-serif-regular text-center">Web Design Excellence Since 2024</h2>
     <p>We create stunning, responsive websites that combine cutting-edge technology with exceptional user experience.</p>
     </div>
 
-    <section class="spaced">
+    <section class="spacemtb">
         <!-- services, this will be likely lengthen out in the near future. "Our Services" is underlined-->
     <div id = "ecs"><h2 id="ourServA" class="pt-serif-regular">Our Services (Click Me!)</h2></div>
     
@@ -53,52 +55,54 @@
 
     </div>
     </section>
-    <section id="ourTechStack" class="spaced">
+    <section id="ourTechStack" class="spacesmtb">
     <h2 class="pt-serif-regular">Our Technology Stack</h2>
     <p class="text-center">We use cutting-edge technologies to deliver exceptional results:</p>
 
     <div class="techStacks">
 
-    <div class="row row-cols-lg-4 row-cols-md-4 row-cols-sm-2">
+    
         <div class="item">HTML5</div>
             <div class="item">CSS3</div>
                 <div class="item">JavaScript</div>
                     <div class="item">Responsive Design</div>
-    </div>
+    
 
-    <div class="row row-cols-lg-4 row-cols-md-4 row-cols-sm-2">
+    
         <div class="item">CSS Grid</div>
             <div class="item">Flexbox</div>
                 <div class="item">Animations</div>
                     <div class="item">Semantic HTML</div>
-    </div>
+    
     </div>
     </section>
 
-    <section class="spaced">
+    <section class="spacemtb">
     <h2 id="interactDemo" class="spacesmtb">Interactive Demonstrations</h2>
     <div>
     <h5>CSS Animations and Transitions</h5>
+    Hover over the box below to see smooth transitions and transformations:
+    <div id="shapeChange"></div>
     </div>
 
 
-    <h4 class="pt-serif-regular">Visibility Property Demo</h4>
+    <h4 class="pt-serif-regular green">Visibility Property Demo</h4>
     <p>Click the button to toggle element visibility (notice it still takes up space):</p>
         <button id="visTrigger">Toggle Visibility</button>
         <div id="visTarget">This element demonstrates the visibility property!</div>
-    <h4 class="pt-serif-regular">Box Model Demonstration</h4>
+    <h4 class="pt-serif-regular green">Box Model Demonstration</h4>
         <p>Hover to see padding, margin, and border changes:</p>
         <div class="boxModel"><p>Box Model Demo</p><p>Margin: 20px | Border: 5px | Padding: 20px</p></div>
 
     <h5 class="pt-serif-regular">Embedded Content with IFrames</h5>
     <p>Here's an example of embedding external content:</p>
-    <iframe class="iframe"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2834.368657353595!2d-74.9891992!3d44.7324951!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc5d49b5e03a9f%3A0x34ed4ffecd8d6afb!2sBOCES%20Seaway%20Tech%20Campus!5e0!3m2!1sen!2sus!4v1748969878041!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="iframe-border"><iframe class="iframe"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2834.368657353595!2d-74.9891992!3d44.7324951!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc5d49b5e03a9f%3A0x34ed4ffecd8d6afb!2sBOCES%20Seaway%20Tech%20Campus!5e0!3m2!1sen!2sus!4v1748969878041!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     <p>IFrames are useful for embedding maps, videos, videos, or other external content while maintaining security isolation.</p>
 
     <div class="card text-center">
         
-        <h3 class="pt-serif-regular">Advanced CSS Selectors</h3>
-        <p>This project demonstrates various selector combinations:</p>
+        <h3 class="pt-serif-regular gradient">Advanced CSS Selectors</h3>
+        <p class="blue">This project demonstrates various selector combinations:</p>
         
         
             <p><b>Multi-selectors:</b> h1, h2, h3 { font-family: Georgia }</p>
@@ -113,14 +117,14 @@
     </section>
 
     <section id="getInTouch">
-    <h2 id="getInTouch" class="pt-serif-regular">Get In Touch</h2>
+    <h2 id="getInTouch" class="pt-serif-regular blue">Get In Touch</h2>
     <p>Ready to start your next web project? Let's discuss how we can help bring your vision to life.</p>
     <p><b>Email:</b> info@computerinfoscience.com</p>
     <p><b>Phone:</b> (555) 123-4567</p>
     <p><b>Address:</b> 7225 NY-56, Norwood, NY 13668</p>
     </div>
     </section>
-    <footer>
+    <footer class="ending">
         <p>2024 Computer & Information Science. All rights reserved.</p>
         <p>Built with HTML5 semantic tags, advanced CSS selectors, animations, and responsive design principles.</p>
     </footer>
@@ -136,14 +140,6 @@
         });
 
 
-
-        $("#visTrigger").click(function(){
-            
-        })
-        
-        $(".boxModel").on("mouseon", function(){
-            $(".boxModel").animate({"scale":"1"}, "slow")
-        })
     </script>
 </body>
 </html>

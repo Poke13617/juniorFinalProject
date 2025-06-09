@@ -2,9 +2,11 @@
 
 
 .boxes{
-background-color:#fff;
+background-color:whitesmoke;
 margin: 15px 30px 15px 30px;
 padding: 15px 30px 15px 30px;
+border-radius:25px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .item{
     background: linear-gradient(135deg, #00568c, #008e66);
@@ -12,6 +14,7 @@ padding: 15px 30px 15px 30px;
     padding: 1rem;
     text-align: center;
     border-radius: 8px;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 .item:hover{
@@ -20,6 +23,20 @@ padding: 15px 30px 15px 30px;
 .item:nth-child(3n){
     background: linear-gradient(135deg, #008e66, #00568c);
 }
+.boxModel:hover{
+    animation:scaling .75s forwards;
+}
+
+    @keyframes scaling{
+        from{
+        scale:0.8;
+        margin:20px;
+        }
+        to {
+        scale:1;
+        margin:30px;
+        }
+    }
 
 #ec-desc{
     margin: 15px 30px 15px 30px;
@@ -32,6 +49,7 @@ padding: 100px 0px 20px 0px;
     margin: 75px;
 }
 .techStacks{
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
     grid-template-columns: repeat(4, 1fr);
@@ -49,8 +67,12 @@ padding: 100px 0px 20px 0px;
 .card{
     border:2px solid black;
 }
-.iframe{
-    border:10px solid #00568c;
+.iframe-border{
+    border: 3px solid #00568c;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 .boxModel{
     background-color:#00568c;
@@ -73,4 +95,75 @@ body{
 }
 .spaceltb{
     margin:50px;
+}
+.ending{
+    background-color:#3d3d3d;
+    color:#fff;
+    padding:20px 0px 20px 0px;
+    margin:60px 0px 0px 0px;
+}
+.blue{
+    color:#00568c;
+}
+.green{
+    color:#009e66;
+}
+.gradient{
+    color:linear-gradient(135deg, #00568c, #009e66)
+}
+.nav-img{
+    height:65px;
+    width:65px;
+    margin:5px 10px 5px 0px;
+}
+.navLi{
+    list-style: none;
+}
+.nav-across{
+    display:flex;
+    
+}
+.nav-content{
+    margin:20px 10px 0px 10px;
+    float:right;
+
+}
+.bgGradient{
+    background:linear-gradient(135deg,#009e66 60%, #00568c 100%)
+}
+.navDiv{
+    margin:0px 0px 0px 0px;
+    background-color:linear-gradient(135deg,#009e66,#00568c)
+}
+#hero{
+    background:linear-gradient(250deg,#009e66,#00568c 100%);
+    padding:50px 50px 50px 50px;
+    color:white;
+}
+nav{
+    background-color:linear-gradient(135deg,#009e66,#00568c)
+}
+.white{
+    color:#fff;
+}
+
+
+#shapeChange:hover{
+    animation:shift .75s forwards;
+}
+@keyframes shift{
+    from{
+    border-radius:5px;
+    }
+    to{
+    border-radius:50px;
+    rotate:75deg;
+    }
+}
+#shapechange{
+    border-radius:5px;
+    padding:5px 5px 5px 5px;
+    height:50px;
+    width:50px;
+    background-color:blue;
 }
