@@ -160,10 +160,16 @@ nav{
     rotate:75deg;
     }
 }
-#shapechange{
+#shapeChange{
     border-radius:5px;
     padding:5px 5px 5px 5px;
+    margin:0% 47.5% 0% 47.5%;
     height:50px;
     width:50px;
     background-color:blue;
+    align-content: center;
+    
+}
+.section{
+    align-items:center;
 }

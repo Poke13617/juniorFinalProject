@@ -79,10 +79,14 @@
 
     <section class="spacemtb">
     <h2 id="interactDemo" class="spacesmtb">Interactive Demonstrations</h2>
-    <div>
+    <div class="section">
+
     <h5>CSS Animations and Transitions</h5>
-    Hover over the box below to see smooth transitions and transformations:
+
+    <p>Hover over the box below to see smooth transitions and transformations:</p>
+
     <div id="shapeChange"></div>
+    
     </div>
 
 
@@ -138,7 +142,14 @@
         $("#ecs").click(function(){
             $("#ec-desc").slideToggle('slow')
         });
-
+        
+        document.getElementById('visTrigger').onclick = function() {
+        if(document.getElementById('visTarget').style('opacity','0')){
+            document.getElementById('visTarget').style('opacity','1')
+        } else {
+            document.getElementById('visTarget').style('opacity','0')
+        }
+        }
 
     </script>
 </body>
