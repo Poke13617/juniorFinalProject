@@ -16,7 +16,7 @@
     <nav>
     <div class="navDiv">
         <ul class="nav-across bgGradient">
-            <li class="navLi"><img class="nav-img" src="logo.png"></li>
+            <li class="navLi"><img class="nav-img" src="logo.png"><span class='bold'>Computer &amp; Information Sciences</span></li>
             <li class="navLi nav-content"><a class="white"href=#home>Home</a></li>
             <li class="navLi nav-content"><a class="white"href=#ourServA>Our Services</a></li>
             <li class="navLi nav-content"><a class="white"href=#ourTechStack>Our Tech Stack</a></li>
@@ -78,10 +78,10 @@
     </section>
 
     <section class="spacemtb">
-    <h2 id="interactDemo" class="spacesmtb">Interactive Demonstrations</h2>
+    <h2 id="interactDemo" class="spacesmtb blue">Interactive Demonstrations</h2>
     <div class="section">
 
-    <h5>CSS Animations and Transitions</h5>
+    <h4 class="pt-serif-regular green">CSS Animations and Transitions</h4>
 
     <p>Hover over the box below to see smooth transitions and transformations:</p>
 
@@ -92,13 +92,14 @@
 
     <h4 class="pt-serif-regular green">Visibility Property Demo</h4>
     <p>Click the button to toggle element visibility (notice it still takes up space):</p>
-        <button id="visTrigger">Toggle Visibility</button>
+        <button id="visTrigger" style="opacity : 1;"onclick="toggleVis()">Toggle Visibility</button>
         <div id="visTarget">This element demonstrates the visibility property!</div>
+
     <h4 class="pt-serif-regular green">Box Model Demonstration</h4>
         <p>Hover to see padding, margin, and border changes:</p>
         <div class="boxModel"><p>Box Model Demo</p><p>Margin: 20px | Border: 5px | Padding: 20px</p></div>
 
-    <h5 class="pt-serif-regular">Embedded Content with IFrames</h5>
+    <h4 class="pt-serif-regular green">Embedded Content with IFrames</h4>
     <p>Here's an example of embedding external content:</p>
     <div class="iframe-border"><iframe class="iframe"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2834.368657353595!2d-74.9891992!3d44.7324951!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc5d49b5e03a9f%3A0x34ed4ffecd8d6afb!2sBOCES%20Seaway%20Tech%20Campus!5e0!3m2!1sen!2sus!4v1748969878041!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     <p>IFrames are useful for embedding maps, videos, videos, or other external content while maintaining security isolation.</p>
@@ -110,10 +111,9 @@
         
         
             <p><b>Multi-selectors:</b> h1, h2, h3 { font-family: Georgia }</p>
-            <p><b>Child selectors:</b> .card > h3 for direct children</p>
             <p><b>Pseudo-selectors:</b> :nth-child(even) for alternating styles</p>
             <p><b>Hover effects:</b> Interactive elements throughout the site</p>
-            <p><b>Focus States:</b> Accessible navigation and form elements</p>
+            <p><b>JavaScript Animations:</b> Animations used to change states of elements in "Our Services" and "Visibility Property Demo</p>
         
     
     
@@ -136,20 +136,28 @@
 
     </script>
     <script>
+        //initial movement of the slideToggle for the services so that it's already set in place
         $("#ec-desc").ready(function(){
             $("#ec-desc").slideToggle('slow')
         })
+        //Animation used for the services for the items to appear and disappear
         $("#ecs").click(function(){
             $("#ec-desc").slideToggle('slow')
         });
+
+        //This is the function used. it checks if the visibility style is blank or doesn't exist yet, then toggles it as visible, also setting the opacity of the element and content to 1.
+        //If it already has it's visibility set to visible, it hides the content and sets it back to 0, allowing the function to run multiple times without anything breaking.
+        function toggleVis() {
+            const element = document.getElementById('visTarget');
+            if (element.style.visibility === 'hidden' || element.style.visibility === '') {
+                element.style.visibility = 'visible';
+                element.style.opacity = '1';
+            } else {
+                element.style.visibility = 'hidden';
+                element.style.opacity = '0';
+            }
+        }
         
-        document.getElementById('visTrigger').onclick = function() {
-        if(document.getElementById('visTarget').style('opacity','0')){
-            document.getElementById('visTarget').style('opacity','1')
-        } else {
-            document.getElementById('visTarget').style('opacity','0')
-        }
-        }
 
     </script>
 </body>
